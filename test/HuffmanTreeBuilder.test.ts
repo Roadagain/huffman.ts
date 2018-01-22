@@ -3,7 +3,7 @@
 
 import Counter from '../src/Counter';
 import HuffmanNode from '../src/HuffmanNode';
-import HuffmanTree from '../src/HuffmanNode';
+import HuffmanTree from '../src/HuffmanTree';
 import HuffmanTreeBuilder from '../src/HuffmanTreeBuilder';
 import * as assert from 'assert';
 
