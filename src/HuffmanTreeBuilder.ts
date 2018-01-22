@@ -1,6 +1,6 @@
-import Counter from 'Counter';
-import HuffmanNode from 'HuffmanNode';
-import HuffmanTree from 'HuffmanTree';
+import Counter from './Counter';
+import HuffmanNode from './HuffmanNode';
+import HuffmanTree from './HuffmanTree';
 
 export default class HuffmanTreeBuilder {
     static fromCounter(counter: Counter): HuffmanTree {
