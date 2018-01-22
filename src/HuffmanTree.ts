@@ -1,4 +1,4 @@
-import HuffmanNode from 'HuffmanNode';
+import HuffmanNode from './HuffmanNode';
 
 export default class HuffmanTree {
     readonly left: HuffmanTree|HuffmanNode;
