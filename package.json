@@ -1,0 +1,10 @@
+{
+  "name": "huffman.ts",
+  "version": "0.0.1",
+  "description": "Huffman encoder for TypeScript",
+  "main": "index.js",
+  "repository": "https://github.com/Roadagain/huffman.ts.git",
+  "author": "Roadagain <ringoh72@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
