@@ -4,7 +4,7 @@ import HuffmanTree from './HuffmanTree';
 
 export default class HuffmanTreeBuilder {
     static fromCounter(counter: Counter): HuffmanTree {
-        const forest = counter.count.map((v: [string, number]) => {
+        const forest: Array<HuffmanNode|HuffmanTree> = counter.count.map((v: [string, number]) => {
             const [symb, count] = v;
             return new HuffmanNode(symb, count);
         }).sort(HuffmanTree.compare);

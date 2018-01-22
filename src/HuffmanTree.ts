@@ -11,7 +11,7 @@ export default class HuffmanTree {
         this.count = left.count + right.count;
     }
 
-    static compare(a: HuffmanTree, b: HuffmanTree) {
+    static compare(a: HuffmanTree|HuffmanNode, b: HuffmanTree|HuffmanNode) {
         return a.count - b.count;
     }
 }
