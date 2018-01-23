@@ -2,8 +2,8 @@ export default class Counter {
     readonly count: Array<[string, number]>;
 
     constructor(str: string) {
-        let map = new Map<string, number>();
-        for (let c of str){
+        const map = new Map<string, number>();
+        for (const c of str){
             //i hope setdefault to js map
             let currentCount = 0; // if the key isnt exist, count must be 0
             if (map.has(c)){
