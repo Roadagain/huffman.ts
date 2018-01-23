@@ -1,18 +1,17 @@
 import Counter from './Counter';
-import HuffmanNode from './HuffmanNode';
 import HuffmanTree from './HuffmanTree';
 
 export default class HuffmanTreeBuilder {
     static fromCounter(counter: Counter): HuffmanTree {
-        const forest: Array<HuffmanNode|HuffmanTree> = counter.count.map((v: [string, number]) => {
+        const forest = counter.count.map((v: [string, number]) => {
             const [symb, count] = v;
-            return new HuffmanNode(symb, count);
+            return new HuffmanTree(symb, count);
         }).sort(HuffmanTree.compare);
 
         while (forest.length > 1){
-            const mini1 = forest.shift();
-            const mini2 = forest.shift();
-            forest.push(new HuffmanTree(mini1, mini2));
+            const mini1 = forest.shift() as HuffmanTree;
+            const mini2 = forest.shift() as HuffmanTree;
+            forest.push(new HuffmanTree(undefined, undefined, [mini1, mini2]));
             forest.sort(HuffmanTree.compare); // sorted set will get this more quickly
         }
 

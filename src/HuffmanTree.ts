@@ -1,17 +1,21 @@
-import HuffmanNode from './HuffmanNode';
-
 export default class HuffmanTree {
-    readonly left: HuffmanTree|HuffmanNode;
-    readonly right: HuffmanTree|HuffmanNode;
+    readonly symb?: string;
     readonly count: number;
+    readonly left?: HuffmanTree;
+    readonly right?: HuffmanTree;
 
-    constructor(left: HuffmanTree|HuffmanNode, right: HuffmanTree|HuffmanNode) {
-        this.left = left;
-        this.right = right;
-        this.count = left.count + right.count;
+    constructor(symb?: string, count?: number, children?: [HuffmanTree, HuffmanTree]){
+        this.symb = symb || undefined;
+        if (children !== undefined){
+            this.count = children[0].count + children[1].count;
+        }
+        else {
+            this.count = count || 0;
+        }
+        [this.left, this.right] = children || [undefined, undefined];
     }
 
-    static compare(a: HuffmanTree|HuffmanNode, b: HuffmanTree|HuffmanNode) {
+    static compare(a: HuffmanTree, b: HuffmanTree) {
         return a.count - b.count;
     }
 }
