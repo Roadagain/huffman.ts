@@ -23,8 +23,8 @@ describe('huffman tree', () => {
 
         assert.strictEqual(tree.symb, undefined, 'symbol is not actual');
         assert.strictEqual(tree.left, left, 'left child is not actual');
-        assert.strictEqual(tree.right, right, 'right child is not actual');
-        assert.strictEqual(tree.count, left.count + right.count, 'count is not actual');
+        assert.deepStrictEqual(tree.right, right, 'right child is not actual');
+        assert.deepStrictEqual(tree.count, left.count + right.count, 'count is not actual');
     });
 
     it('construct a tree from one node and one tree', () => {
@@ -35,8 +35,8 @@ describe('huffman tree', () => {
         const tree = new HuffmanTree(undefined, undefined, [left, right]);
 
         assert.strictEqual(tree.symb, undefined, 'symbol is not actual');
-        assert.strictEqual(tree.left, left, 'left child is not actual');
-        assert.strictEqual(tree.right, right, 'right child is not actual');
+        assert.deepStrictEqual(tree.left, left, 'left child is not actual');
+        assert.deepStrictEqual(tree.right, right, 'right child is not actual');
         assert.strictEqual(tree.count, left.count + right.count, 'count is not actual');
     });
 
@@ -50,8 +50,8 @@ describe('huffman tree', () => {
         const tree = new HuffmanTree(undefined, undefined, [left, right]);
 
         assert.strictEqual(tree.symb, undefined, 'symbol is not actual');
-        assert.strictEqual(tree.left, left, 'left child is not actual');
-        assert.strictEqual(tree.right, right, 'right child is not actual');
+        assert.deepStrictEqual(tree.left, left, 'left child is not actual');
+        assert.deepStrictEqual(tree.right, right, 'right child is not actual');
         assert.strictEqual(tree.count, left.count + right.count, 'count is not actual');
     });
 });
