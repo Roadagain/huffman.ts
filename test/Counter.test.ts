@@ -18,13 +18,13 @@ describe('counter', () => {
             ['t', 3],
             ['u', 1],
         ];
-        assert.deepEqual(counter.count, expected, 'Counter is not actual');
+        assert.deepStrictEqual(counter.count, expected, 'Counter is not actual');
     });
 
     it('count empty string', () => {
         const counter = new Counter('');
         const expected = [] as Array<[string, number]>;
-        assert.deepEqual(counter.count, expected, 'Counter is not actual');
+        assert.deepStrictEqual(counter.count, expected, 'Counter is not actual');
     });
 
     it('count japanese string', () => {
@@ -41,6 +41,6 @@ describe('counter', () => {
             ['め', 1],
             ['ん', 1],
         ];
-        assert.deepEqual(counter.count, expected, 'Counter is not actual');
+        assert.deepStrictEqual(counter.count, expected, 'Counter is not actual');
     });
 });

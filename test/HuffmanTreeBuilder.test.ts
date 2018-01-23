@@ -16,7 +16,7 @@ describe('huffman tree builder', () => {
         const rexpected = new HuffmanTree(undefined, undefined, [rlexpected, rrexpected]);
         const expected = new HuffmanTree(undefined, undefined, [lexpected, rexpected]);
 
-        assert.deepEqual(tree, expected, 'built tree is not actual');
+        assert.deepStrictEqual(tree, expected, 'built tree is not actual');
     });
 
     it('construct a tree from a string', () => {
@@ -28,6 +28,6 @@ describe('huffman tree builder', () => {
         const rexpected = new HuffmanTree(undefined, undefined, [rlexpected, rrexpected]);
         const expected = new HuffmanTree(undefined, undefined, [lexpected, rexpected]);
 
-        assert.deepEqual(tree, expected, 'built tree is not actual');
+        assert.deepStrictEqual(tree, expected, 'built tree is not actual');
     });
 });
