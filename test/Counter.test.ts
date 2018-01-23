@@ -23,7 +23,7 @@ describe('counter', () => {
 
     it('count empty string', () => {
         const counter = new Counter('');
-        const expected = [];
+        const expected = [] as Array<[string, number]>;
         assert.deepEqual(counter.count, expected, 'Counter is not actual');
     });
 
