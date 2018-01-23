@@ -22,7 +22,7 @@ describe('codebook', () => {
             new Code('t', '101'),
         ];
 
-        assert.deepEqual(codebook, expected, 'codebook from huffman tree is not actual');
+        assert.deepStrictEqual(codebook, expected, 'codebook from huffman tree is not actual');
     });
 
     it('generate a codebook from a string', () => {
@@ -40,6 +40,6 @@ describe('codebook', () => {
             new Code('t', '101'),
         ];
 
-        assert.deepEqual(codebook, expected, 'codebook from huffman tree is not actual');
+        assert.deepStrictEqual(codebook, expected, 'codebook from huffman tree is not actual');
     });
 });

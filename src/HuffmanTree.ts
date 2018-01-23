@@ -4,6 +4,9 @@ export default class HuffmanTree {
     readonly left?: HuffmanTree;
     readonly right?: HuffmanTree;
 
+    // i wanna set constructors like these:
+    // - symb and count
+    // - children
     constructor(symb?: string, count?: number, children?: [HuffmanTree, HuffmanTree]){
         this.symb = symb || undefined;
         if (children !== undefined){
@@ -15,7 +18,7 @@ export default class HuffmanTree {
         [this.left, this.right] = children || [undefined, undefined];
     }
 
-    static compare(a: HuffmanTree, b: HuffmanTree) {
+    static compare(a: HuffmanTree, b: HuffmanTree): number {
         return a.count - b.count;
     }
 }
