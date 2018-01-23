@@ -1,8 +1,8 @@
 import Counter from './Counter';
 import HuffmanTree from './HuffmanTree';
 
-export default class HuffmanTreeBuilder {
-    static fromCounter(counter: Counter): HuffmanTree {
+module HuffmanTreeBuilder {
+    export const fromCounter = (counter: Counter): HuffmanTree => {
         const forest = counter.count.map((v: [string, number]) => {
             const [symb, count] = v;
             return new HuffmanTree(symb, count);
@@ -18,7 +18,7 @@ export default class HuffmanTreeBuilder {
         return forest[0]; // name is forest but just one tree
     }
 
-    static fromString(str: string): HuffmanTree {
-        return HuffmanTreeBuilder.fromCounter(new Counter(str));
-    }
+    export const fromString = (str: string) => fromCounter(new Counter(str));
 }
+
+export default HuffmanTreeBuilder;
