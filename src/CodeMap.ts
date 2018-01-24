@@ -10,7 +10,7 @@ module CodeMap {
     export const fromString = (str: string): Map<string, string> => {
         // As usual, onelinerize will takes too long
         return fromCodebook(Codebook.fromString(str));
-    }
+    };
 }
 
 export default CodeMap;

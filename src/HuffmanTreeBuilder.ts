@@ -16,7 +16,7 @@ module HuffmanTreeBuilder {
         }
 
         return forest[0]; // name is forest but just one tree
-    }
+    };
 
     export const fromString = (str: string) => fromCounter(new Counter(str));
 }
