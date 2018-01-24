@@ -1,6 +1,3 @@
-///<reference path="../node_modules/@types/power-assert/index.d.ts" />
-///<reference path="../node_modules/@types/jasmine/index.d.ts" />
-
 import HuffmanTree from "../src/HuffmanTree";
 import * as assert from "assert";
 

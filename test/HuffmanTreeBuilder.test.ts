@@ -1,6 +1,3 @@
-///<reference path="../node_modules/@types/power-assert/index.d.ts" />
-///<reference path="../node_modules/@types/jasmine/index.d.ts" />
-
 import Counter from "../src/Counter";
 import HuffmanTree from "../src/HuffmanTree";
 import HuffmanTreeBuilder from "../src/HuffmanTreeBuilder";
