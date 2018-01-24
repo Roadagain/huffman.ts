@@ -6,6 +6,10 @@ module Encode {
     export const fromCodebook = (str: string, codes: Code[]): string => {
         const codetuples = codes.map((c: Code): [string, string] => [c.symb, c.body]);
         const codemap = new Map<string, string>(codetuples);
+        return fromCodeMap(str, codemap);
+    }
+
+    export const fromCodeMap = (str: string, codemap: Map<string, string>): string => {
         const encoded = str.split('').map((c: string) => codemap.get(c));
         return encoded.join('');
     }
