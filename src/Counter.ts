@@ -4,7 +4,7 @@ export default class Counter {
     constructor(str: string) {
         const map = new Map<string, number>();
         for (const c of str) {
-            //i hope setdefault to js map
+            // i hope setdefault to js map
             let currentCount = 0; // if the key isnt exist, count must be 0
             if (map.has(c)) {
                 // there is no worry about null: map has the key
