@@ -7,9 +7,9 @@ export default class HuffmanTree {
     // i wanna set constructors like these:
     // - symb and count
     // - children
-    constructor(symb?: string, count?: number, children?: [HuffmanTree, HuffmanTree]){
+    constructor(symb?: string, count?: number, children?: [HuffmanTree, HuffmanTree]) {
         this.symb = symb || undefined;
-        if (children !== undefined){
+        if (children !== undefined) {
             this.count = children[0].count + children[1].count;
         }
         else {

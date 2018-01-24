@@ -8,7 +8,7 @@ module HuffmanTreeBuilder {
             return new HuffmanTree(symb, count);
         }).sort(HuffmanTree.compare);
 
-        while (forest.length > 1){
+        while (forest.length > 1) {
             const mini1 = forest.shift() as HuffmanTree;
             const mini2 = forest.shift() as HuffmanTree;
             forest.push(new HuffmanTree(undefined, undefined, [mini1, mini2]));
