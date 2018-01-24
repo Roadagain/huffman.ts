@@ -1,5 +1,4 @@
 export default class HuffmanTree {
-
     public static compare(a: HuffmanTree, b: HuffmanTree): number {
         return a.count - b.count;
     }
