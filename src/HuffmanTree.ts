@@ -16,8 +16,7 @@ export default class HuffmanTree {
         this.symb = symb || undefined;
         if (children !== undefined) {
             this.count = children[0].count + children[1].count;
-        }
-        else {
+        } else {
             this.count = count || 0;
         }
         [this.left, this.right] = children || [undefined, undefined];
