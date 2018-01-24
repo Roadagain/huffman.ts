@@ -7,4 +7,5 @@ install:
 script:
     - yarn run test
     - yarn run build
+    - yarn run lint
 cache: yarn
