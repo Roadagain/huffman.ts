@@ -1,4 +1,9 @@
 export default class HuffmanTree {
+
+    static compare(a: HuffmanTree, b: HuffmanTree): number {
+        return a.count - b.count;
+    }
+
     readonly symb?: string;
     readonly count: number;
     readonly left?: HuffmanTree;
@@ -16,9 +21,5 @@ export default class HuffmanTree {
             this.count = count || 0;
         }
         [this.left, this.right] = children || [undefined, undefined];
-    }
-
-    static compare(a: HuffmanTree, b: HuffmanTree): number {
-        return a.count - b.count;
     }
 }
