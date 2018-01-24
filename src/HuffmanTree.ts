@@ -1,13 +1,13 @@
 export default class HuffmanTree {
 
-    static compare(a: HuffmanTree, b: HuffmanTree): number {
+    public static compare(a: HuffmanTree, b: HuffmanTree): number {
         return a.count - b.count;
     }
 
-    readonly symb?: string;
-    readonly count: number;
-    readonly left?: HuffmanTree;
-    readonly right?: HuffmanTree;
+    public readonly symb?: string;
+    public readonly count: number;
+    public readonly left?: HuffmanTree;
+    public readonly right?: HuffmanTree;
 
     // i wanna set constructors like these:
     // - symb and count

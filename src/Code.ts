@@ -1,5 +1,5 @@
 export default class Code {
-    static compare(a: Code, b: Code): number {
+    public static compare(a: Code, b: Code): number {
         if (a.symb < b.symb) {
             return -1;
         }

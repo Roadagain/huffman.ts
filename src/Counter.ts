@@ -1,5 +1,5 @@
 export default class Counter {
-    readonly count: Array<[string, number]>;
+    public readonly count: Array<[string, number]>;
 
     constructor(str: string) {
         const map = new Map<string, number>();
