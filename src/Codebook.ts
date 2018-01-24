@@ -12,7 +12,7 @@ module Codebook {
         // children is not be undefined
         const leftCodebook = fromHuffmanTree(tree.left, prefix + "0");
         const rightCodebook = fromHuffmanTree(tree.right as HuffmanTree, prefix + "1");
-        return leftCodebook.concat(rightCodebook).sort(Code.cmp);
+        return leftCodebook.concat(rightCodebook).sort(Code.compare);
     };
 
     export const fromString = (str: string, prefix = ""): Code[] => {

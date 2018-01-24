@@ -1,5 +1,5 @@
 export default class Code {
-    static cmp(a: Code, b: Code): number {
+    static compare(a: Code, b: Code): number {
         if (a.symb < b.symb) {
             return -1;
         }
