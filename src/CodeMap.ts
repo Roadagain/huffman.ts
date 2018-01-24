@@ -14,3 +14,5 @@ module CodeMap {
         return fromCodebook(str, Codebook.fromString(str));
     }
 }
+
+export default CodeMap;
