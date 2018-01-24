@@ -1,6 +1,6 @@
-import * as CodeMap from "../src/CodeMap";
-import * as Codebook from "../src/Codebook";
 import * as assert from "assert";
+import * as Codebook from "../src/Codebook";
+import * as CodeMap from "../src/CodeMap";
 
 describe("codemap", () => {
     it("mapping a codebook from a codebook", () => {

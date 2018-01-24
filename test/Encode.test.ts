@@ -1,6 +1,6 @@
+import * as assert from "assert";
 import * as CodeMap from "../src/CodeMap";
 import * as Encode from "../src/Encode";
-import * as assert from "assert";
 
 describe("encode", () => {
     it("encode from a codemap", () => {

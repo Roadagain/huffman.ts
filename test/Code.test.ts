@@ -1,5 +1,5 @@
-import Code from "../src/Code";
 import * as assert from "assert";
+import Code from "../src/Code";
 
 describe("code", () => {
     it("instance code", () => {

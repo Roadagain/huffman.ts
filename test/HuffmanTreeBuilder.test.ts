@@ -1,7 +1,7 @@
+import * as assert from "assert";
 import Counter from "../src/Counter";
 import HuffmanTree from "../src/HuffmanTree";
 import * as HuffmanTreeBuilder from "../src/HuffmanTreeBuilder";
-import * as assert from "assert";
 
 describe("huffman tree builder", () => {
     it("construct a tree from a counter", () => {

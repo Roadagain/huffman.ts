@@ -1,7 +1,7 @@
-import * as HuffmanTreeBuilder from "../src/HuffmanTreeBuilder";
+import * as assert from "assert";
 import Code from "../src/Code";
 import * as Codebook from "../src/Codebook";
-import * as assert from "assert";
+import * as HuffmanTreeBuilder from "../src/HuffmanTreeBuilder";
 
 describe("codebook", () => {
     it("generate a codebook from a huffman tree", () => {

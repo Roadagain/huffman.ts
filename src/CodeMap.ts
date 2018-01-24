@@ -1,5 +1,5 @@
-import * as Codebook from "./Codebook";
 import Code from "./Code";
+import * as Codebook from "./Codebook";
 
 export const fromCodebook = (codebook: Code[]): Map<string, string> => {
     const tuplized = codebook.map((c: Code): [string, string] => [c.symb, c.body]);

@@ -1,5 +1,5 @@
-import HuffmanTree from "../src/HuffmanTree";
 import * as assert from "assert";
+import HuffmanTree from "../src/HuffmanTree";
 
 describe("huffman tree", () => {
     it("construct a leaf", () => {

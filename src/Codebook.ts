@@ -1,6 +1,6 @@
+import Code from "./Code";
 import HuffmanTree from "./HuffmanTree";
 import * as HuffmanTreeBuilder from "./HuffmanTreeBuilder";
-import Code from "./Code";
 
 export const fromHuffmanTree = (tree: HuffmanTree, prefix = ""): Code[] => {
     if (tree.left === undefined) {

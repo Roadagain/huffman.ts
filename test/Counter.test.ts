@@ -1,5 +1,5 @@
-import Counter from "../src/Counter";
 import * as assert from "assert";
+import Counter from "../src/Counter";
 
 describe("counter", () => {
     it("count characters", () => {
