@@ -1,5 +1,5 @@
-import Counter from './Counter';
-import HuffmanTree from './HuffmanTree';
+import Counter from "./Counter";
+import HuffmanTree from "./HuffmanTree";
 
 module HuffmanTreeBuilder {
     export const fromCounter = (counter: Counter): HuffmanTree => {

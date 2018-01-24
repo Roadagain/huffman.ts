@@ -1,5 +1,5 @@
-import Codebook from './Codebook';
-import Code from './Code';
+import Codebook from "./Codebook";
+import Code from "./Code";
 
 module CodeMap {
     export const fromCodebook = (codebook: Code[]): Map<string, string> => {
