@@ -15,14 +15,14 @@ describe("code", () => {
         const a = new Code("i", "11");
         const b = new Code("n", "10");
 
-        assert.strictEqual(Code.cmp(a, b), -1, "less compare is not actual");
+        assert.strictEqual(Code.compare(a, b), -1, "less compare is not actual");
     });
 
     it("compare code: more", () => {
         const a = new Code("w", "100");
         const b = new Code("u", "110");
 
-        assert.strictEqual(Code.cmp(a, b), 1, "more compare is not actual");
+        assert.strictEqual(Code.compare(a, b), 1, "more compare is not actual");
     });
 
     it("compare code: equal", () => {
@@ -30,6 +30,6 @@ describe("code", () => {
         const b = new Code("o", "000");
 
         assert.deepStrictEqual(a, b, "equal compare is not actual");
-        assert.strictEqual(Code.cmp(a, b), 0, "equal compare is not actual");
+        assert.strictEqual(Code.compare(a, b), 0, "equal compare is not actual");
     });
 });
