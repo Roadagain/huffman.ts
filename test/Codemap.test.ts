@@ -1,5 +1,5 @@
-import CodeMap from "../src/CodeMap";
-import Codebook from "../src/Codebook";
+import * as CodeMap from "../src/CodeMap";
+import * as Codebook from "../src/Codebook";
 import * as assert from "assert";
 
 describe("codemap", () => {

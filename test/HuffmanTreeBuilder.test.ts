@@ -1,6 +1,6 @@
 import Counter from "../src/Counter";
 import HuffmanTree from "../src/HuffmanTree";
-import HuffmanTreeBuilder from "../src/HuffmanTreeBuilder";
+import * as HuffmanTreeBuilder from "../src/HuffmanTreeBuilder";
 import * as assert from "assert";
 
 describe("huffman tree builder", () => {

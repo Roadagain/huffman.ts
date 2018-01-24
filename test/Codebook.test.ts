@@ -1,6 +1,6 @@
-import HuffmanTreeBuilder from "../src/HuffmanTreeBuilder";
+import * as HuffmanTreeBuilder from "../src/HuffmanTreeBuilder";
 import Code from "../src/Code";
-import Codebook from "../src/Codebook";
+import * as Codebook from "../src/Codebook";
 import * as assert from "assert";
 
 describe("codebook", () => {

@@ -1,5 +1,5 @@
-import CodeMap from "../src/CodeMap";
-import Encode from "../src/Encode";
+import * as CodeMap from "../src/CodeMap";
+import * as Encode from "../src/Encode";
 import * as assert from "assert";
 
 describe("encode", () => {
