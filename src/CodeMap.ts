@@ -11,7 +11,7 @@ module CodeMap {
 
     export const fromString = (str: string): CodeMap => {
         // As usual, onelinerize will takes too long
-        return fromCodebook(str, Codebook.fromString(str));
+        return fromCodebook(Codebook.fromString(str));
     }
 }
 
